@@ -18,7 +18,7 @@ def recommend(movie):
 st.title('Movie Recommender System')
 
 movies_dict = pickle.load(open('movies_to_dict.pkl','rb'))
-similarity = pickle.load(open('similarity.pkl','rb'))
+similarity = pickle.load(open('similarity.pkl.pbz2','rb'))
 movies = pd.DataFrame(movies_dict)
 
 option = st.selectbox(
